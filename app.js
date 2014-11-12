@@ -14,7 +14,7 @@ angular.module('News', []).controller('MainCtrl', ['$scope',function($scope){
   $scope.defaultSort = '';
 
 	$scope.addPost = function(){
-  		if(!$scope.title || $scope.title === '') { return; }
+  		if(!$scope.title || $scope.title === '') { return window.alert('Name required!'); }
   		$scope.posts.push({
     		title: $scope.title,
     		link: $scope.link,
